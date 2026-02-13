@@ -1,0 +1,15 @@
+2026-02-13 23:20:24 - trading_bot - INFO - Logging initialized. Log file: logs/trading_bot_20260213_232024.log
+2026-02-13 23:20:24 - trading_bot - INFO - Initializing Trading Bot...
+2026-02-13 23:20:25 - trading_bot - INFO - Binance Futures client initialized successfully
+2026-02-13 23:20:25 - trading_bot - INFO - Using TESTNET environment
+2026-02-13 23:20:25 - trading_bot - INFO - OrderManager initialized
+2026-02-13 23:20:28 - trading_bot - INFO - Placing order...
+2026-02-13 23:20:28 - trading_bot - DEBUG - Symbol validated: BTCUSDT
+2026-02-13 23:20:28 - trading_bot - DEBUG - Side validated: BUY
+2026-02-13 23:20:28 - trading_bot - DEBUG - Order type validated: MARKET
+2026-02-13 23:20:28 - trading_bot - DEBUG - Quantity validated: 0.001
+2026-02-13 23:20:28 - trading_bot - INFO - All inputs validated successfully: {'symbol': 'BTCUSDT', 'side': 'BUY', 'order_type': 'MARKET', 'quantity': 0.001, 'price': None}
+2026-02-13 23:20:29 - trading_bot - INFO - API connectivity test successful
+2026-02-13 23:20:29 - trading_bot - ERROR - Binance API error: Invalid API-key, IP, or permissions for action
+2026-02-13 23:20:29 - trading_bot - ERROR - Connection test failed: API error: Invalid API-key, IP, or permissions for action
+2026-02-13 23:20:29 - trading_bot - ERROR - API error: API error: Invalid API-key, IP, or permissions for action

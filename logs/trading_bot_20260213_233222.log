@@ -1,0 +1,18 @@
+2026-02-13 23:32:22 - trading_bot - INFO - Logging initialized. Log file: logs/trading_bot_20260213_233222.log
+2026-02-13 23:32:22 - trading_bot - INFO - Initializing Trading Bot...
+2026-02-13 23:32:23 - trading_bot - INFO - Binance Futures client initialized successfully
+2026-02-13 23:32:23 - trading_bot - INFO - Using TESTNET environment
+2026-02-13 23:32:23 - trading_bot - INFO - OrderManager initialized
+2026-02-13 23:32:27 - trading_bot - INFO - Placing order...
+2026-02-13 23:32:27 - trading_bot - DEBUG - Symbol validated: BTCUSDT
+2026-02-13 23:32:27 - trading_bot - DEBUG - Side validated: BUY
+2026-02-13 23:32:27 - trading_bot - DEBUG - Order type validated: MARKET
+2026-02-13 23:32:27 - trading_bot - DEBUG - Quantity validated: 0.002
+2026-02-13 23:32:27 - trading_bot - INFO - All inputs validated successfully: {'symbol': 'BTCUSDT', 'side': 'BUY', 'order_type': 'MARKET', 'quantity': 0.002, 'price': None}
+2026-02-13 23:32:28 - trading_bot - INFO - API connectivity test successful
+2026-02-13 23:32:28 - trading_bot - INFO - API authentication successful
+2026-02-13 23:32:28 - trading_bot - INFO - Placing MARKET order: BUY 0.002 BTCUSDT
+2026-02-13 23:32:28 - trading_bot - INFO - MARKET order placed successfully. OrderId: 12248530517
+2026-02-13 23:32:28 - trading_bot - DEBUG - Order response: {'orderId': 12248530517, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': '8193qn65Gs5wCUKAKH9D8j', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.002', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1771005748403}
+2026-02-13 23:32:28 - trading_bot - INFO - Order created successfully: 12248530517
+2026-02-13 23:32:28 - trading_bot - INFO - Order completed successfully

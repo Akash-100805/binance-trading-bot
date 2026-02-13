@@ -1,0 +1,17 @@
+2026-02-13 23:30:08 - trading_bot - INFO - Logging initialized. Log file: logs/trading_bot_20260213_233008.log
+2026-02-13 23:30:08 - trading_bot - INFO - Initializing Trading Bot...
+2026-02-13 23:30:08 - trading_bot - INFO - Binance Futures client initialized successfully
+2026-02-13 23:30:08 - trading_bot - INFO - Using TESTNET environment
+2026-02-13 23:30:08 - trading_bot - INFO - OrderManager initialized
+2026-02-13 23:30:10 - trading_bot - INFO - Placing order...
+2026-02-13 23:30:10 - trading_bot - DEBUG - Symbol validated: BTCUSDT
+2026-02-13 23:30:10 - trading_bot - DEBUG - Side validated: BUY
+2026-02-13 23:30:10 - trading_bot - DEBUG - Order type validated: MARKET
+2026-02-13 23:30:10 - trading_bot - DEBUG - Quantity validated: 0.001
+2026-02-13 23:30:10 - trading_bot - INFO - All inputs validated successfully: {'symbol': 'BTCUSDT', 'side': 'BUY', 'order_type': 'MARKET', 'quantity': 0.001, 'price': None}
+2026-02-13 23:30:12 - trading_bot - INFO - API connectivity test successful
+2026-02-13 23:30:12 - trading_bot - INFO - API authentication successful
+2026-02-13 23:30:12 - trading_bot - INFO - Placing MARKET order: BUY 0.001 BTCUSDT
+2026-02-13 23:30:13 - trading_bot - ERROR - Binance API error: Order's notional must be no smaller than 100 (unless you choose reduce only).
+2026-02-13 23:30:13 - trading_bot - ERROR - Order creation failed: API error: Order's notional must be no smaller than 100 (unless you choose reduce only).
+2026-02-13 23:30:13 - trading_bot - ERROR - API error: API error: Order's notional must be no smaller than 100 (unless you choose reduce only).

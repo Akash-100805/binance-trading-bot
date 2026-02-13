@@ -1,0 +1,19 @@
+2026-02-13 23:32:56 - trading_bot - INFO - Logging initialized. Log file: logs/trading_bot_20260213_233256.log
+2026-02-13 23:32:56 - trading_bot - INFO - Initializing Trading Bot...
+2026-02-13 23:32:57 - trading_bot - INFO - Binance Futures client initialized successfully
+2026-02-13 23:32:57 - trading_bot - INFO - Using TESTNET environment
+2026-02-13 23:32:57 - trading_bot - INFO - OrderManager initialized
+2026-02-13 23:32:59 - trading_bot - INFO - Placing order...
+2026-02-13 23:32:59 - trading_bot - DEBUG - Symbol validated: BTCUSDT
+2026-02-13 23:32:59 - trading_bot - DEBUG - Side validated: SELL
+2026-02-13 23:32:59 - trading_bot - DEBUG - Order type validated: LIMIT
+2026-02-13 23:32:59 - trading_bot - DEBUG - Quantity validated: 0.002
+2026-02-13 23:32:59 - trading_bot - DEBUG - Price validated: 100000.0
+2026-02-13 23:32:59 - trading_bot - INFO - All inputs validated successfully: {'symbol': 'BTCUSDT', 'side': 'SELL', 'order_type': 'LIMIT', 'quantity': 0.002, 'price': 100000.0}
+2026-02-13 23:33:00 - trading_bot - INFO - API connectivity test successful
+2026-02-13 23:33:00 - trading_bot - INFO - API authentication successful
+2026-02-13 23:33:00 - trading_bot - INFO - Placing LIMIT order: SELL 0.002 BTCUSDT @ 100000.0
+2026-02-13 23:33:01 - trading_bot - INFO - LIMIT order placed successfully. OrderId: 12248538886
+2026-02-13 23:33:01 - trading_bot - DEBUG - Order response: {'orderId': 12248538886, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'GpL3A447OoaIJZqExHT6WJ', 'price': '100000.00', 'avgPrice': '0.00', 'origQty': '0.002', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1771005781155}
+2026-02-13 23:33:01 - trading_bot - INFO - Order created successfully: 12248538886
+2026-02-13 23:33:01 - trading_bot - INFO - Order completed successfully
