@@ -1,17 +1,16 @@
 # Trading Bot - Binance Futures Testnet
 
-A command-line trading bot for placing orders on Binance Futures Testnet.
+A command-line trading bot for placing orders on Binance Futures Testnet (USDT-M).
 
 ## Features
 
 - Place MARKET and LIMIT orders
 - Support for BUY and SELL sides
-- Input validation with clear error messages
-- Comprehensive logging of all operations
+- Input validation with error handling
+- Comprehensive logging
 - Clean, modular code structure
-- Proper error handling
 
-## Setup Instructions
+## Setup
 
 ### 1. Install Dependencies
 ```bash
@@ -21,93 +20,42 @@ pip install -r requirements.txt
 ### 2. Get API Credentials
 
 1. Go to https://testnet.binancefuture.com
-2. Register for a testnet account
-3. Generate API Key and Secret
-4. Save these credentials
+2. Register and generate API keys
+3. Copy `config_template.py` to `config.py`
+4. Add your API credentials to `config.py`
 
-### 3. Configure API Keys
+### 3. Usage
+
+**MARKET Order:**
 ```bash
-# Copy the template
-cp config_template.py config.py
-
-# Edit config.py and add your credentials
+python cli.py --symbol BTCUSDT --side BUY --type MARKET --quantity 0.002
 ```
 
-Edit `config.py`:
-```python
-API_KEY = "your_actual_api_key_here"
-API_SECRET = "your_actual_api_secret_here"
-```
-
-## Usage
-
-### MARKET Order Examples
+**LIMIT Order:**
 ```bash
-# BUY order
-python cli.py --symbol BTCUSDT --side BUY --type MARKET --quantity 0.01
-
-# SELL order
-python cli.py --symbol ETHUSDT --side SELL --type MARKET --quantity 0.1
+python cli.py --symbol BTCUSDT --side SELL --type LIMIT --quantity 0.002 --price 60000
 ```
-
-### LIMIT Order Examples
-```bash
-# BUY order
-python cli.py --symbol BTCUSDT --side BUY --type LIMIT --quantity 0.01 --price 45000
-
-# SELL order
-python cli.py --symbol ETHUSDT --side SELL --type LIMIT --quantity 0.1 --price 3500
-```
-
-## Command-Line Arguments
-
-| Argument | Required | Description |
-|----------|----------|-------------|
-| `--symbol` | Yes | Trading pair (e.g., BTCUSDT) |
-| `--side` | Yes | BUY or SELL |
-| `--type` | Yes | MARKET or LIMIT |
-| `--quantity` | Yes | Order quantity |
-| `--price` | For LIMIT | Price for limit orders |
 
 ## Project Structure
 ```
 trading_bot/
 ├── bot/
-│   ├── __init__.py
 │   ├── client.py          # Binance API wrapper
 │   ├── orders.py          # Order management
 │   ├── validators.py      # Input validation
-│   └── logging_config.py  # Logging setup
+│   └── logging_config.py  # Logging configuration
 ├── cli.py                 # CLI interface
-├── config_template.py     # Config template
+├── config_template.py     # API credentials template
 ├── requirements.txt       # Dependencies
-├── .gitignore
 └── README.md
 ```
-
-## Logging
-
-All operations are logged to `logs/` directory with timestamp:
-- API requests and responses
-- Order details
-- Errors and exceptions
-
-## Error Handling
-
-The bot handles:
-- Invalid inputs
-- API errors
-- Network failures
-- Missing configuration
-
-## Security
-
-- Never commit `config.py` (it's in .gitignore)
-- Use testnet credentials only
-- Keep API keys secure
 
 ## Requirements
 
 - Python 3.7+
-- Internet connection
 - Binance Futures Testnet account
+- Internet connection
+
+## Logging
+
+All operations are logged to `logs/` directory with timestamps.
